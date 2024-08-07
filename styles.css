@@ -89,7 +89,6 @@ input::placeholder {
 
 .button {
   width: 100%;
-  background-color: blue;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -111,6 +110,7 @@ input::placeholder {
   justify-content: center;
   margin-top: 62px;
   margin-bottom: 158px;
+  gap: 8px;
 }
 
 .socials p {
@@ -118,6 +118,39 @@ input::placeholder {
   font-weight: 400;
   color: rgba(103, 103, 103, 1);
   font-size: 12px;
+}
+
+.social_icon span {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: url(images/google.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.social_icon span:nth-child(2) {
+  background: url(images/apple.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.social_icon span:nth-child(3) {
+  background: url(images/facebook.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.social_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 37px;
+  height: 50px;
+  width: 100%;
 }
 
 .back_button {
@@ -128,4 +161,19 @@ input::placeholder {
   margin: auto;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+}
+
+.button .orange_button {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background-color: #ff4b26;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 26px 0 rgba(231, 96, 71, 0.47);
+}
+
+.button .orange_button .arrow_right {
+  color: white;
 }
